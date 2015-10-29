@@ -4,6 +4,7 @@ import angular from 'angular';
 
 // angular modules
 import 'angular-ui-router';
+import 'angular-material';
 import './templates';
 import './filters';
 import './controllers';
@@ -13,6 +14,7 @@ import './directives';
 // create and bootstrap application
 const requires = [
   'ui.router',
+  'ngMaterial',
   'templates',
   'app.filters',
   'app.controllers',
@@ -29,4 +31,4 @@ angular.module('app').config(require('./on_config'));
 
 angular.module('app').run(require('./on_run'));
 
-angular.bootstrap(document, ['app']);
+//angular.bootstrap(document, ['app']);
